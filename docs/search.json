@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2025-02-11T15:35:24-08:00"
+    },
+    {
+      "path": "index.html",
+      "title": "EDLD 652 Winter 2025 Blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2025-02-11T15:35:25-08:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

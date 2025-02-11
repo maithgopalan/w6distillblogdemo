@@ -1,0 +1,85 @@
+---
+title: "Second Post"
+description: |
+  A short description of the post.
+author:
+  - name: Maithreyi Gopalan
+    url: https://maithgopalan.github.io/
+date: 2025-02-11
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.height = 5)
+theme_set(theme_light(20))
+```
+
+I'm going to show how to create a plot, and display it in different ways.
+
+```{r plot-ex1}
+ggplot(mpg, aes(displ, cty)) +
+  geom_point() +
+  geom_smooth() +
+  labs(title = "Default")
+```
+
+Now let's look at the same plot with `l-body-outset`. And now I'm just going to say a bunch of random stuff so we can see where the text ends and how the plot goes beyond that.
+
+
+```{r plot-ex2, layout = "l-body-outset"}
+ggplot(mpg, aes(displ, cty)) +
+  geom_point() +
+  geom_smooth() +
+  labs(title = "Body Outset")
+```
+
+Now we'll try the same thing again, but this time with `layout = "l-page"`
+
+```{r plot-ex3, layout = "l-page"}
+ggplot(mpg, aes(displ, cty)) +
+  geom_point() +
+  geom_smooth() +
+  labs(title = "Page layout")
+```
+
+And now we'll try `layout = "l-screen"`
+
+```{r plot-ex4, layout = "l-screen"}
+ggplot(mpg, aes(displ, cty)) +
+  geom_point() +
+  geom_smooth() +
+  labs(title = "Screen layout")
+```
+
+
+Now let's look at the same plot with `l-body-outset`. And now I'm just going to say a bunch of random stuff so we can see where the text ends and how the plot goes beyond that.
+
+
+<aside>
+
+This plot up there is HUGE!
+
+```{r aside-table, echo = FALSE}
+mpg %>% 
+  head() %>% 
+  select(manufacturer, model, displ, cty) %>% 
+  gt::gt()
+```
+
+</aside>
+
+That table is too hard to read. Let's look at it much bigger, and let's include all the columns. And we're going to be really fancy and make it an interactive table with `{reactable}`
+
+```{r tbl-full, layout = "l-screen"}
+mpg %>% 
+  reactable::reactable()
+```

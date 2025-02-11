@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+.distill-site-nav {
+  font-family: 'Trade Winds' ;
+  color: #333C5C;
+  background-color: #E17DBA; 
+  font-size: 15px;
+  font-weight: 300;
+}
+
+body {
+  background-color: #6EC67F;
+}
