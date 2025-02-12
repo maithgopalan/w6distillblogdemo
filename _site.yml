@@ -3,6 +3,7 @@ title: "EDLD 652 Winter 2025 Blog"
 description: |
   EDLD 652 Winter 2025 Blog
 output_dir: "docs"
+base_url: https://maithgopalan.github.io/w6distillblogdemo/
 navbar:
   right:
     - text: "Home"
@@ -10,3 +11,4 @@ navbar:
     - text: "About"
       href: about.html
 output: distill::distill_article
+                                                           
