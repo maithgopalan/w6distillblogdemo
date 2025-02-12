@@ -17,5 +17,23 @@ reading what we have to say!</description>
       <guid>https://maithgopalan.github.io/w6distillblogdemo/posts/welcome</guid>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>First Post</title>
+      <dc:creator>Maithreyi Gopalan</dc:creator>
+      <link>https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-first-post</link>
+      <description>A short description of the post.</description>
+      <guid>https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-first-post</guid>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-first-post/first-post_files/figure-html5/plot-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
+      <title>Second Post</title>
+      <dc:creator>Maithreyi Gopalan</dc:creator>
+      <link>https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-second-post</link>
+      <description>A short description of the post.</description>
+      <guid>https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-second-post</guid>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <media:content url="https://maithgopalan.github.io/w6distillblogdemo/posts/2025-02-10-second-post/second-post_files/figure-html5/plot-ex1-1.png" medium="image" type="image/png" width="1248" height="960"/>
+    </item>
   </channel>
 </rss>

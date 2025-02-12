@@ -15,5 +15,43 @@
     "preview": {},
     "last_modified": "2025-02-11T14:53:05-08:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2025-02-10-first-post/",
+    "title": "First Post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Maithreyi Gopalan",
+        "url": "https://maithgopalan.github.io/"
+      }
+    ],
+    "date": "2025-02-10",
+    "categories": [],
+    "contents": "\r\nCheck it out. Here’s an amazing plot, with ggplot2.\r\n\r\n\r\n\r\nThis was produced with the following data (note, only first six rows shown).\r\n\r\n\r\nmanufacturer\r\n      model\r\n      displ\r\n      year\r\n      cyl\r\n      trans\r\n      drv\r\n      cty\r\n      hwy\r\n      fl\r\n      class\r\n    audi\r\na4\r\n1.8\r\n1999\r\n4\r\nauto(l5)\r\nf\r\n18\r\n29\r\np\r\ncompactaudi\r\na4\r\n1.8\r\n1999\r\n4\r\nmanual(m5)\r\nf\r\n21\r\n29\r\np\r\ncompactaudi\r\na4\r\n2.0\r\n2008\r\n4\r\nmanual(m6)\r\nf\r\n20\r\n31\r\np\r\ncompactaudi\r\na4\r\n2.0\r\n2008\r\n4\r\nauto(av)\r\nf\r\n21\r\n30\r\np\r\ncompactaudi\r\na4\r\n2.8\r\n1999\r\n6\r\nauto(l5)\r\nf\r\n16\r\n26\r\np\r\ncompactaudi\r\na4\r\n2.8\r\n1999\r\n6\r\nmanual(m5)\r\nf\r\n18\r\n26\r\np\r\ncompact\r\n\r\nThe table to the left can produce this figure (if you have all the data)\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-10-first-post/first-post_files/figure-html5/plot-1.png",
+    "last_modified": "2025-02-11T17:45:53-08:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
+    "path": "posts/2025-02-10-second-post/",
+    "title": "Second Post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Maithreyi Gopalan",
+        "url": "https://maithgopalan.github.io/"
+      }
+    ],
+    "date": "2025-02-10",
+    "categories": [],
+    "contents": "\r\nI’m going to show how to create a plot, and display it in different ways.\r\n\r\n\r\nggplot(mpg, aes(displ, cty)) +\r\n  geom_point() +\r\n  geom_smooth() +\r\n  labs(title = \"Default\")\r\n\r\n\r\n\r\nNow let’s look at the same plot with l-body-outset. And now I’m just going to say a bunch of random stuff so we can see where the text ends and how the plot goes beyond that.\r\n\r\n\r\nggplot(mpg, aes(displ, cty)) +\r\n  geom_point() +\r\n  geom_smooth() +\r\n  labs(title = \"Body Outset\")\r\n\r\n\r\n\r\nNow we’ll try the same thing again, but this time with layout = \"l-page\"\r\n\r\n\r\nggplot(mpg, aes(displ, cty)) +\r\n  geom_point() +\r\n  geom_smooth() +\r\n  labs(title = \"Page layout\")\r\n\r\n\r\n\r\nAnd now we’ll try layout = \"l-screen\"\r\n\r\n\r\nggplot(mpg, aes(displ, cty)) +\r\n  geom_point() +\r\n  geom_smooth() +\r\n  labs(title = \"Screen layout\")\r\n\r\n\r\n\r\nNow let’s look at the same plot with l-body-outset. And now I’m just going to say a bunch of random stuff so we can see where the text ends and how the plot goes beyond that.\r\nThis plot up there is HUGE!\r\n\r\n\r\nmanufacturer\r\n      model\r\n      displ\r\n      cty\r\n    audi\r\na4\r\n1.8\r\n18audi\r\na4\r\n1.8\r\n21audi\r\na4\r\n2.0\r\n20audi\r\na4\r\n2.0\r\n21audi\r\na4\r\n2.8\r\n16audi\r\na4\r\n2.8\r\n18\r\n\r\nThat table is too hard to read. Let’s look at it much bigger, and let’s include all the columns. And we’re going to be really fancy and make it an interactive table with {reactable}\r\n\r\n\r\nmpg %>% \r\n  reactable::reactable()\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2025-02-10-second-post/second-post_files/figure-html5/plot-ex1-1.png",
+    "last_modified": "2025-02-11T17:47:01-08:00",
+    "input_file": {},
+    "preview_width": 1248,
+    "preview_height": 960
   }
 ]
